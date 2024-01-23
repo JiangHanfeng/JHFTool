@@ -1,0 +1,16 @@
+PODS:
+  - JHFTool (0.1.0)
+
+DEPENDENCIES:
+  - JHFTool (from `../`)
+
+EXTERNAL SOURCES:
+  JHFTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JHFTool: 77493c445d41b4d2d52e8e023ac0662aa7ff583c
+
+PODFILE CHECKSUM: 7608aa13ef53ae85fdc3c44bac76e652fbdb27e2
+
+COCOAPODS: 1.13.0
