@@ -243,6 +243,19 @@ public extension JHFSafeArray {
             }
         }
     }
+    
+    subscript(r: Range<Array.Index>) -> [Element] {
+        get {
+            var result: [Element] = []
+            queue.sync {
+                guard array.endIndex >= r.startIndex && array.endIndex >= r.endIndex else {
+                    fatalError("\(r) out of range [0...\(array.count)]")
+                }
+                result = Array(array[r.startIndex...r.endIndex])
+            }
+            return result
+        }
+    }
 }
 
 // MARK: for Equatable
