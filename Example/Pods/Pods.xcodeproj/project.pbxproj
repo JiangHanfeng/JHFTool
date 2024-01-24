@@ -10,6 +10,7 @@
 		1E772BCFC1BEDDBC04886990CDE329D5 /* JHFTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F42D3109FD6FCBD56C0BC868AE0022EC /* JHFTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32CBAF25A3599EAE4D28480CE63BD5BF /* Pods-JHFTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A4F3D6EF7E6DFBF0F1CB05581E4C22 /* Pods-JHFTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BD01F092B5FC1B5000F1295 /* JHFSafeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD01F082B5FC1B5000F1295 /* JHFSafeArray.swift */; };
+		4BD01F112B610170000F1295 /* JHFCancelableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD01F102B610170000F1295 /* JHFCancelableTask.swift */; };
 		58FD5133197A37C52CE89C3AF365891B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		79B8530DEFA7C3B2637B60D75CDF90A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8865EA0F625AB6CA088662EB8A6A3AFC /* JHFTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79418160B3469E65FD0930793281F44C /* JHFTool-dummy.m */; };
@@ -50,6 +51,7 @@
 		48DAA59F211544DF252CC642AC9DB24E /* JHFTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JHFTool.modulemap; sourceTree = "<group>"; };
 		4AA8522BDEB627209986A8DFBD32AD40 /* JHFTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JHFTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BD01F082B5FC1B5000F1295 /* JHFSafeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JHFSafeArray.swift; path = JHFTool/Classes/JHFSafeArray.swift; sourceTree = "<group>"; };
+		4BD01F102B610170000F1295 /* JHFCancelableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JHFCancelableTask.swift; path = JHFTool/Classes/JHFCancelableTask.swift; sourceTree = "<group>"; };
 		545FA234E247D48A3AF4569E0E850B5F /* Pods-JHFTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JHFTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5B0257C0FA732EA6CF4E3692D890A6B0 /* Pods-JHFTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHFTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5F7B00174979DA4CE0CADA77C757A04E /* Pods-JHFTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JHFTool_Tests.modulemap"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		62C8DC7BD5048099D3A0B0C3BAF68B66 /* JHFTool */ = {
 			isa = PBXGroup;
 			children = (
+				4BD01F102B610170000F1295 /* JHFCancelableTask.swift */,
 				4BD01F082B5FC1B5000F1295 /* JHFSafeArray.swift */,
 				0DA130E49FB92C1AE7B6935A76AC78A2 /* Pod */,
 				4362421BA48B1C2DCABA11CFA8840D37 /* Support Files */,
@@ -380,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD01F112B610170000F1295 /* JHFCancelableTask.swift in Sources */,
 				8865EA0F625AB6CA088662EB8A6A3AFC /* JHFTool-dummy.m in Sources */,
 				4BD01F092B5FC1B5000F1295 /* JHFSafeArray.swift in Sources */,
 			);
