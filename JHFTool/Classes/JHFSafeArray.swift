@@ -244,14 +244,14 @@ public extension JHFSafeArray {
         }
     }
     
-    subscript(r: Range<Array.Index>) -> [Element] {
+    subscript(r: ClosedRange<Int>) -> [Element] {
         get {
             var result: [Element] = []
             queue.sync {
-                guard array.endIndex >= r.startIndex && array.endIndex >= r.endIndex else {
+                guard array.endIndex >= r.lowerBound && array.endIndex >= r.upperBound else {
                     fatalError("\(r) out of range [0...\(array.count)]")
                 }
-                result = Array(array[r.startIndex...r.endIndex])
+                result = Array(array[r.lowerBound...r.upperBound])
             }
             return result
         }
