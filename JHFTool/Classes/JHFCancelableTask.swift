@@ -10,7 +10,7 @@ import Foundation
 public class JHFCancelableTask : NSObject {
     public typealias Excutable = (_ isCanceled: Bool) -> ()
     
-    @discardableResult static func delay(_ time: TimeInterval, at queue: dispatch_queue_t, task: @escaping () -> ()) -> Excutable? {
+    @discardableResult public static func delay(_ time: TimeInterval, at queue: dispatch_queue_t, task: @escaping () -> ()) -> Excutable? {
         var closure: (() -> Void)? = task
         var result: Excutable?
         let delayClosure: Excutable = { isCancelled in
