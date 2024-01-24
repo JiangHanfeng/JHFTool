@@ -15,6 +15,14 @@ public class JHFSafeArray<Element> {
 }
 
 public extension JHFSafeArray {
+    var all: [Element] {
+        var results: [Element] = []
+        queue.sync {
+            results = array
+        }
+        return results
+    }
+    
     var first: Element? {
         var result: Element?
         queue.sync {
