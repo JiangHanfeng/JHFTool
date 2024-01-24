@@ -10,6 +10,8 @@ import Foundation
 public class JHFSafeArray<Element> {
     fileprivate let queue = DispatchQueue(label: "com.JHFTool.JHFSafeArray", attributes: .concurrent)
     fileprivate var array: [Element] = []
+    
+    public init() {}
 }
 
 public extension JHFSafeArray {
