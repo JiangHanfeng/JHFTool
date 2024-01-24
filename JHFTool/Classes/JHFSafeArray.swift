@@ -246,4 +246,12 @@ public extension JHFSafeArray where Element: Equatable {
         }
         return result
     }
+    
+    func firstIndex(of element: Element) -> Int? {
+        var result: Int?
+        queue.sync {
+            result = array.firstIndex(of: element)
+        }
+        return result
+    }
 }
